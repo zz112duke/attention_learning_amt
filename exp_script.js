@@ -1,6 +1,3 @@
-/* load psiturk */
-//var psiturk = new PsiTurk(uniqueId, adServerLoc, mode);
-
 var enter_full = {
   type: 'fullscreen',
   fullscreen_mode: true
@@ -355,24 +352,3 @@ jsPsych.init({
       downloadCSV(csv, filename);
       jsPsych.data.displayData()}
 });
-
-/* record id, condition, counterbalance on every trial */
-// jsPsych.data.addProperties({
-//     uniqueId: uniqueId,
-//     condition: condition,
-//     counterbalance: counterbalance
-// });
-//
-//
-// jsPsych.init({
-//     display_element: $('#jspsych-target'),
-//     timeline: [enter_full,consent,instr_1,at_test_procedure,exit_full],
-//     on_finish: function(){
-//                 psiturk.saveData({
-//                     success: function() { psiturk.completeHIT(); }
-//                 });
-//             },
-//             on_data_update: function(data) {
-//                 psiturk.recordTrialData(data);
-//             }
-//         });
